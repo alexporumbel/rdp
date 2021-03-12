@@ -26,8 +26,8 @@ printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debia
 read -p "Paste Here: " CRP
 su - ALOK -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
-sudo apt install xfce4-settings
-sudo apt install libexo-1-0
+sudo apt-get install xfce4-terminal
+sudo update-alternatives --config x-terminal-emulator
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
